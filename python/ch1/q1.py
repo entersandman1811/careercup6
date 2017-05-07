@@ -16,11 +16,11 @@ class Test(unittest.TestCase):
     dataF = [('23ds2'), ('hb 627jh=j ()')]
 
     def test_unique(self):
-    # true check
+        # true check
         for test_string in self.dataT:
             actual = is_unique(test_string)
             self.assertTrue(actual)
-            # false check
+        # false check
         for test_string in self.dataF:
             actual = is_unique(test_string)
             self.assertFalse(actual)
